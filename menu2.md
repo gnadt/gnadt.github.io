@@ -107,7 +107,7 @@ Which you can use like this `{{m1fill title}}`: **{{m1fill title}}**. Of course 
 Of course these examples are not very useful, in practice you might want to use it to generate actual HTML in a specific way using Julia code.
 For instance you can use it to customise how [tag pages look like](/menu3/#customising_tag_pages).
 
-A nice example of what you can do is in the [SymbolicUtils.jl manual](https://juliasymbolics.github.io/SymbolicUtils.jl/api/) where they use a `hfun_` to generate HTML encapsulating the content of code docstrings, in a way doing something similar to what Documenter does. See [how they defined it](https://github.com/JuliaSymbolics/SymbolicUtils.jl/blob/website/utils.jl).
+A nice example of what you can do is in the [SymbolicUtils.jl manual](https://juliasymbolics.github.io/SymbolicUtils.jl/api/) where they use a `hfun_` to generate HTML encapsulating the content of code docstrings, in a way doing something similar to what Documenter does. See [how they defined it](https://github.com/JuliaSymbolics/SymbolicUtils.jl/blob/master/src/utils.jl).
 
 **Note**: the  output **will not** be reprocessed by Franklin, if you want to generate markdown which should be processed by Franklin, then use `return fd2html(markdown, internal=true)` at the end.
 
