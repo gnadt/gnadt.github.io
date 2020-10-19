@@ -1363,6 +1363,51 @@ tr,td,th {
   color: #fff
 }
 
+.btn--github {
+  background-color: #171516;
+  color: #fff
+}
+
+.btn--github:visited {
+  background-color: #171516;
+  color: #fff
+}
+
+.btn--github:hover {
+  background-color: #121112;
+  color: #000
+}
+
+.btn--graduation-cap {
+  background-color: #171516;
+  color: #fff
+}
+
+.btn--graduation-cap:visited {
+  background-color: #171516;
+  color: #fff
+}
+
+.btn--graduation-cap:hover {
+  background-color: #121112;
+  color: #000
+}
+
+.btn--map-marker-alt {
+  background-color: #ff0000;
+  color: #fff
+}
+
+.btn--map-marker-alt:visited {
+  background-color: #ff0000;
+  color: #fff
+}
+
+.btn--map-marker-alt:hover {
+  background-color: #aa0000;
+  color: #000
+}
+
 .btn--twitter {
   background-color: #55acee;
   color: #fff
@@ -1390,6 +1435,36 @@ tr,td,th {
 
 .btn--linkedin:hover {
   background-color: #006292;
+  color: #000
+}
+
+.btn--researchgate {
+  background-color: #42d0af;
+  color: #fff
+}
+
+.btn--researchgate:visited {
+  background-color: #42d0af;
+  color: #fff
+}
+
+.btn--researchgate:hover {
+  background-color: #35a68c;
+  color: #fff
+}
+
+.btn--orcid {
+  background-color: #a6ce39;
+  color: #fff
+}
+
+.btn--orcid:visited {
+  background-color: #a6ce39;
+  color: #fff
+}
+
+.btn--orcid:hover {
+  background-color: #85a52e;
   color: #fff
 }
 
@@ -2427,7 +2502,6 @@ tr,td,th {
   padding-bottom: 5px;
   font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
   font-size: .75em;
-  text-transform: uppercase
 }
 
 .page__footer-follow li+li:before {
@@ -3067,6 +3141,10 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
   color: #e24329
 }
 
+.social-icons .fa-graduation-cap {
+  color: #171516
+}
+
 .social-icons .fa-instagram {
   color: #517fa4
 }
@@ -3079,8 +3157,16 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
   color: #007bb6
 }
 
+.social-icons .fa-map-marker-alt {
+  color: #ff0000
+}
+
 .social-icons .fa-mastodon,.social-icons .fa-mastodon-square {
   color: #2b90d9
+}
+
+.social-icons .fa-orcid,.social-icons .fa-orcid {
+  color: #a6ce39
 }
 
 .social-icons .fa-pinterest,.social-icons .fa-pinterest-p,.social-icons .fa-pinterest-square {
@@ -3089,6 +3175,10 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
 
 .social-icons .fa-reddit {
   color: #ff4500
+}
+
+.social-icons .fa-researchgate,.social-icons .fa-researchgate {
+  color: #42d0af
 }
 
 .social-icons .fa-rss,.social-icons .fa-rss-square {
