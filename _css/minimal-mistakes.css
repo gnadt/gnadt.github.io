@@ -3575,7 +3575,7 @@ a.reversefootnote:hover {
 
 .page__hero--overlay .page__title,.page__hero--overlay .page__meta,.page__hero--overlay .comment__date,.page__hero--overlay .page__lead,.page__hero--overlay .btn,.page__hero--overlay #goog-wm-sb {
   color: #fff;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5)
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8)
 }
 
 .page__hero--overlay .page__lead {
