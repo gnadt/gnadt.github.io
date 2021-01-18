@@ -1,0 +1,8 @@
+icons
+	Google Scholar
+	Semantic Scholar
+tabs
+	photos
+	projects
+	top 7s
+	workouts

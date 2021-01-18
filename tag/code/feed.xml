@@ -4,7 +4,7 @@
   <description><![CDATA[Official Website of Albert R. Gnadt
 ]]></description>
   <link>https://gnadt.github.io/</link>
-  <atom:link href="https://gnadt.github.io/feed.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://gnadt.github.io/tag/code/feed.xml" rel="self" type="application/rss+xml" />
   <item>
     <title><![CDATA[More goodies]]></title>
     <link>https://gnadt.github.io/menu2/</link>
