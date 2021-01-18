@@ -1393,6 +1393,36 @@ tr,td,th {
   color: #000
 }
 
+.btn--book-open {
+  background-color: #171516;
+  color: #fff
+}
+
+.btn--book-open:visited {
+  background-color: #171516;
+  color: #fff
+}
+
+.btn--book-open:hover {
+  background-color: #121112;
+  color: #000
+}
+
+.btn--envelope {
+  background-color: #171516;
+  color: #fff
+}
+
+.btn--envelope:visited {
+  background-color: #171516;
+  color: #fff
+}
+
+.btn--envelope:hover {
+  background-color: #121112;
+  color: #000
+}
+
 .btn--map-marker-alt {
   background-color: #ff0000;
   color: #fff
@@ -2501,7 +2531,7 @@ tr,td,th {
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
-  font-size: .75em;
+  font-size: 1.0em;
 }
 
 .page__footer-follow li+li:before {
@@ -3142,6 +3172,14 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
 }
 
 .social-icons .fa-graduation-cap {
+  color: #171516
+}
+
+.social-icons .fa-book-open {
+  color: #171516
+}
+
+.social-icons .fa-envelope {
   color: #171516
 }
 
