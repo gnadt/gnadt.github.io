@@ -28,6 +28,7 @@
   z-index: 1043;
   position: fixed;
   outline: none !important;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden
 }
 
@@ -137,6 +138,7 @@ button.mfp-close,button.mfp-arrow {
   cursor: pointer;
   background: transparent;
   border: 0;
+  appearance: none;
   -webkit-appearance: none;
   display: block;
   outline: none;
@@ -598,6 +600,7 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 }
 
 button,html input[type="button"],input[type="reset"],input[type="submit"] {
+  appearance: button;
   -webkit-appearance: button;
   cursor: pointer
 }
@@ -608,6 +611,7 @@ label,select,button,input[type="button"],input[type="reset"],input[type="submit"
 
 input[type="search"] {
   box-sizing: border-box;
+  appearance: textfield;
   -webkit-appearance: textfield
 }
 
@@ -628,7 +632,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #494e52;
+  color: #203731;
   font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
   line-height: 1.5
 }
@@ -2466,8 +2470,8 @@ tr,td,th {
   position: absolute;
   bottom: 0;
   height: auto;
-  margin-top: 3em;
-  color: #898c8f;
+  margin-top: 0em;
+  color: #203731;
   -webkit-animation: intro 0.3s both;
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
@@ -3519,7 +3523,7 @@ a.reversefootnote:hover {
 }
 
 .page__content h2 {
-  padding-bottom: 0.5em;
+  padding-bottom: 0em;
   border-bottom: 1px solid #f2f3f3
 }
 
@@ -3528,7 +3532,7 @@ a.reversefootnote:hover {
 }
 
 .page__content p {
-  margin: 0 0 1.3em
+  margin: 0 0 0em
 }
 
 .page__content a:not(.btn):not(#goog-wm-sb):hover {
@@ -3578,8 +3582,8 @@ a.reversefootnote:hover {
 
 .page__hero--overlay {
   position: relative;
-  margin-bottom: 2em;
-  padding: 3em 0;
+  margin-bottom: 1em;
+  padding: 2em 0;
   clear: both;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4005,6 +4009,7 @@ a.reversefootnote:hover {
   font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
   line-height: initial;
   overflow: hidden;
+  text-align: center;
   text-overflow: ellipsis
 }
 
@@ -4022,7 +4027,7 @@ a.reversefootnote:hover {
 }
 
 .page__content .archive__item-title {
-  margin-top: 1em;
+  margin-top: 0.5em;
   border-bottom: none
 }
 
@@ -4180,7 +4185,7 @@ a.reversefootnote:hover {
 
 .feature__wrapper {
   clear: both;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
   border-bottom: 1px solid #f2f3f3
 }
 
@@ -4820,7 +4825,6 @@ a.reversefootnote:hover {
     border: 0;
     display: block;
     max-width: 100% !important;
-    vertical-align: middle
   }
 
   hr {
