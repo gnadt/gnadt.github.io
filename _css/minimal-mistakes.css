@@ -1457,6 +1457,21 @@ tr,td,th {
   color: #000
 }
 
+.btn--mountain {
+  background-color: #54872c;
+  color: #fff
+}
+
+.btn--mountain:visited {
+  background-color: #54872c;
+  color: #fff
+}
+
+.btn--mountain:hover {
+  background-color: #44771c;
+  color: #000
+}
+
 .btn--orcid {
   background-color: #a6ce39;
   color: #fff
@@ -3169,6 +3184,10 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
 
 .social-icons .fa-map-marker-alt {
   color: #ff0000
+}
+
+.social-icons .fa-mountain {
+  color: #54872c
 }
 
 .social-icons .fa-orcid,.social-icons .fa-orcid {
