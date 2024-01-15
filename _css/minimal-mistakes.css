@@ -368,7 +368,7 @@ img.mfp-img {
 .mfp-title {
   text-align: left;
   line-height: 18px;
-  color: #f3f3f3;
+  color: #f2f3f3;
   word-wrap: break-word;
   padding-right: 36px
 }
@@ -1352,78 +1352,93 @@ tr,td,th {
   color: #fff
 }
 
-.btn--facebook {
-  background-color: #3b5998;
-  color: #fff
-}
-
-.btn--facebook:visited {
-  background-color: #3b5998;
-  color: #fff
-}
-
-.btn--facebook:hover {
-  background-color: #2f477a;
-  color: #fff
-}
-
-.btn--github {
-  background-color: #171516;
-  color: #fff
-}
-
-.btn--github:visited {
-  background-color: #171516;
-  color: #fff
-}
-
-.btn--github:hover {
-  background-color: #121112;
-  color: #000
-}
-
-.btn--graduation-cap {
-  background-color: #171516;
-  color: #fff
-}
-
-.btn--graduation-cap:visited {
-  background-color: #171516;
-  color: #fff
-}
-
-.btn--graduation-cap:hover {
-  background-color: #121112;
-  color: #000
-}
-
 .btn--book-open {
-  background-color: #171516;
+  background-color: #2b56b0;
   color: #fff
 }
 
 .btn--book-open:visited {
-  background-color: #171516;
+  background-color: #2b56b0;
   color: #fff
 }
 
 .btn--book-open:hover {
-  background-color: #121112;
+  background-color: #1b46a0;
   color: #000
 }
 
 .btn--envelope {
-  background-color: #171516;
+  background-color: #d44638;
   color: #fff
 }
 
 .btn--envelope:visited {
-  background-color: #171516;
+  background-color: #d44638;
   color: #fff
 }
 
 .btn--envelope:hover {
-  background-color: #121112;
+  background-color: #c43628;
+  color: #000
+}
+
+.btn--github {
+  background-color: #333333;
+  color: #fff
+}
+
+.btn--github:visited {
+  background-color: #333333;
+  color: #fff
+}
+
+.btn--github:hover {
+  background-color: #232323;
+  color: #000
+}
+
+.btn--google-scholar {
+  background-color: #4285f4;
+  color: #fff
+}
+
+.btn--google-scholar:visited {
+  background-color: #4285f4;
+  color: #fff
+}
+
+.btn--google-scholar:hover {
+  background-color: #3275e4;
+  color: #000
+}
+
+.btn--imdb {
+  background-color: #b59c1d;
+  color: #fff
+}
+
+.btn--imdb:visited {
+  background-color: #b59c1d;
+  color: #fff
+}
+
+.btn--imdb:hover {
+  background-color: #a58c0d;
+  color: #000
+}
+
+.btn--linkedin {
+  background-color: #007bb6;
+  color: #fff
+}
+
+.btn--linkedin:visited {
+  background-color: #007bb6;
+  color: #fff
+}
+
+.btn--linkedin:hover {
+  background-color: #006ba6;
   color: #000
 }
 
@@ -1438,53 +1453,8 @@ tr,td,th {
 }
 
 .btn--map-marker-alt:hover {
-  background-color: #aa0000;
+  background-color: #ef0000;
   color: #000
-}
-
-.btn--twitter {
-  background-color: #55acee;
-  color: #fff
-}
-
-.btn--twitter:visited {
-  background-color: #55acee;
-  color: #fff
-}
-
-.btn--twitter:hover {
-  background-color: #448abe;
-  color: #fff
-}
-
-.btn--linkedin {
-  background-color: #007bb6;
-  color: #fff
-}
-
-.btn--linkedin:visited {
-  background-color: #007bb6;
-  color: #fff
-}
-
-.btn--linkedin:hover {
-  background-color: #006292;
-  color: #000
-}
-
-.btn--researchgate {
-  background-color: #42d0af;
-  color: #fff
-}
-
-.btn--researchgate:visited {
-  background-color: #42d0af;
-  color: #fff
-}
-
-.btn--researchgate:hover {
-  background-color: #35a68c;
-  color: #fff
 }
 
 .btn--orcid {
@@ -1498,8 +1468,38 @@ tr,td,th {
 }
 
 .btn--orcid:hover {
-  background-color: #85a52e;
+  background-color: #96be29;
   color: #fff
+}
+
+.btn--researchgate {
+  background-color: #42d0af;
+  color: #fff
+}
+
+.btn--researchgate:visited {
+  background-color: #42d0af;
+  color: #fff
+}
+
+.btn--researchgate:hover {
+  background-color: #32c09f;
+  color: #fff
+}
+
+.btn--youtube {
+  background-color: #ff0000;
+  color: #fff
+}
+
+.btn--youtube:visited {
+  background-color: #ff0000;
+  color: #fff
+}
+
+.btn--youtube:hover {
+  background-color: #ef0000;
+  color: #000
 }
 
 .btn--block {
@@ -3140,59 +3140,27 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
 }
 
 .social-icons .fas,.social-icons .fab,.social-icons .far,.social-icons .fal {
-  color: #494e52
-}
-
-.social-icons .fa-behance,.social-icons .fa-behance-square {
-  color: #1769ff
-}
-
-.social-icons .fa-bitbucket {
-  color: #205081
-}
-
-.social-icons .fa-dribbble,.social-icons .fa-dribble-square {
-  color: #ea4c89
-}
-
-.social-icons .fa-facebook,.social-icons .fa-facebook-square,.social-icons .fa-facebook-f {
-  color: #3b5998
-}
-
-.social-icons .fa-flickr {
-  color: #ff0084
-}
-
-.social-icons .fa-foursquare {
-  color: #0072b1
-}
-
-.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square {
-  color: #171516
-}
-
-.social-icons .fa-gitlab {
-  color: #e24329
-}
-
-.social-icons .fa-graduation-cap {
-  color: #171516
+  color: #333333
 }
 
 .social-icons .fa-book-open {
-  color: #171516
+  color: #2b56b0
 }
 
 .social-icons .fa-envelope {
-  color: #171516
+  color: #d44638
 }
 
-.social-icons .fa-instagram {
-  color: #517fa4
+.social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square {
+  color: #333333
 }
 
-.social-icons .fa-lastfm,.social-icons .fa-lastfm-square {
-  color: #d51007
+.social-icons .fa-google-scholar {
+  color: #4285f4
+}
+
+.social-icons .fa-imdb {
+  color: #f3ce13
 }
 
 .social-icons .fa-linkedin,.social-icons .fa-linkedin-in {
@@ -3203,60 +3171,16 @@ body:hover .visually-hidden a,body:hover .visually-hidden input,body:hover .visu
   color: #ff0000
 }
 
-.social-icons .fa-mastodon,.social-icons .fa-mastodon-square {
-  color: #2b90d9
-}
-
 .social-icons .fa-orcid,.social-icons .fa-orcid {
   color: #a6ce39
-}
-
-.social-icons .fa-pinterest,.social-icons .fa-pinterest-p,.social-icons .fa-pinterest-square {
-  color: #cb2027
-}
-
-.social-icons .fa-reddit {
-  color: #ff4500
 }
 
 .social-icons .fa-researchgate,.social-icons .fa-researchgate {
   color: #42d0af
 }
 
-.social-icons .fa-rss,.social-icons .fa-rss-square {
-  color: #fa9b39
-}
-
-.social-icons .fa-soundcloud {
-  color: #f30
-}
-
-.social-icons .fa-stack-exchange,.social-icons .fa-stack-overflow {
-  color: #fe7a15
-}
-
-.social-icons .fa-tumblr,.social-icons .fa-tumblr-square {
-  color: #32506d
-}
-
-.social-icons .fa-twitter,.social-icons .fa-twitter-square {
-  color: #55acee
-}
-
-.social-icons .fa-vimeo,.social-icons .fa-vimeo-square,.social-icons .fa-vimeo-v {
-  color: #1ab7ea
-}
-
-.social-icons .fa-vine {
-  color: #00bf8f
-}
-
 .social-icons .fa-youtube {
-  color: #b00
-}
-
-.social-icons .fa-xing,.social-icons .fa-xing-square {
-  color: #006567
+  color: #ff0000
 }
 
 .navicon {
