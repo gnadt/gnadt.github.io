@@ -4646,7 +4646,7 @@ a.reversefootnote:hover {
   padding-right: 5px;
   padding-top: 2px;
   padding-bottom: 2px;
-  color: inherit;
+  color: #333333;
   font-size: 1em;
   text-decoration: none
 }
