@@ -3,7 +3,7 @@
 This is based on Yandex's https://yandex.com/support/zen/website/rss-modify.html
 
 The scope of this segment is the GLOBAL scope (variables defined in config.md).
-For instance 'website_url' or 'website_description'.
+For instance 'website_url' or 'website_desc'.
 
 Notes:
 * namespaces (xmlns): https://validator.w3.org/feed/docs/howto/declare_namespaces.html
@@ -25,7 +25,7 @@ rss_file variable in your config file if you want to use something different tha
     </title>
     <link> {{website_url}} </link>
     <description>
-      <![CDATA[  {{fd2rss website_description}}  ]]>
+      <![CDATA[  {{fd2rss website_desc}}  ]]>
     </description>
     <atom:link
       href="{{fd_rss_feed_url}}"
