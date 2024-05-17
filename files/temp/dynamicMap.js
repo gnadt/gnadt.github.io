@@ -576,7 +576,7 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
                     .attr('cy', function(d) { return yScale(d[6]) })
                     .attr('r', function(d) { return '4' })
                     .attr('y2', function(d) { return yScale(d[9]) })
-                    .attr('fill', function(d){ return '#ffffff' })
+                    .attr('fill', function(d){ return '#000000' })
                     .style('opacity', function(d) {
                         if (d[8] == 'closed' || d[8] == 'issue') {
                             return 0.6
