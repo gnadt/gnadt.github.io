@@ -207,10 +207,6 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
             timeDayText = 'Nighttime service';
         }
 
-        var dateMidnight = new Date(year.value, month.value-1, day.value, 0, 0, 0, 0);
-        var timeFromAsDate;
-        var timeToAsDate;
-
         if (startTime == '') {
             var dateFrom = new Date(year.value, month.value-1, day.value, 4, 0, 0, 0);
         } else {
@@ -219,8 +215,9 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
             var dateFrom = new Date(year.value, month.value-1, day.value, startHour, startMin, 0, 0);
         }
 
-        timeFromAsDate = dateFrom;
+        var timeFromAsDate = dateFrom;
         var timeTo;
+        var timeToAsDate;
         if (endTime == '') {
             var dateToTemp = new Date(year.value, month.value-1, day.value, 3, 0, 0, 0);
             var dateTo = dateToTemp.setDate(dateToTemp.getDate() + 1);
@@ -242,7 +239,6 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
             }
         }
 
-        var midnight = dateMidnight.getTime() / 1000;
         var timeFrom = dateFrom.getTime() / 1000;
 
         if (refreshMode == 'current_status') {
@@ -252,16 +248,7 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
         }
         console.log(" -------------- We are now going to print locating time ------------ ");
         console.log(dateFrom);
-
         console.log(timeFrom);
-
-        // define route, which here is eastbound C-branch on MBTA Green Line
-
-        var allSegments = [];
-
-        var routeInputText = 'C-EB';
-
-        var direction, branchText, tableOfStops, branchTextToCheck;
 
         if (timeInput == 'midday') {
             timeDayText = 'Daytime service';
@@ -273,8 +260,8 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
         // set up d3 box to later plot points
 
         var MARGINS = {top: 20, right: 20, bottom: 20, left: 20};
-        var WIDTH = 1900;
-        var HEIGHT = 1900;
+        var WIDTH   = 1900;
+        var HEIGHT  = 1900;
 
         // take a look at alerts and edit segments and stations as necessary
 
@@ -284,12 +271,6 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
                 dataType : "json",
                 success : function(parsed_json) {
                     var all_alerts = parsed_json['data'];
-                    var display = '';
-                    var display1 = '';
-                    var counterAlert = 0;
-                    var alertTypes = [];
-                    var alertType = '';
-                    var weHaveSevere = false;
 
                     for(i = 0; i < all_alerts.length; i++) {
                         var alertRelevant = false;
@@ -408,7 +389,6 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
                             if (affectedStations.length > 0) {
                                 if (all_alerts[i]['attributes']['effect'] == 'DETOUR' || all_alerts[i]['attributes']['effect'] == 'SHUTTLE' || all_alerts[i]['attributes']['effect'] == 'SUSPENSION') {
                                     // Search for lineSegments
-                                    var possibleMatches = [];
                                     for (a = 0; a < affectedStations.length; a++) {
                                         for (b = 0; b < affectedStations.length; b++) {
                                             if (affectedStations[a] != affectedStations[b]) {
@@ -476,7 +456,6 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
                                     }
                                 } else if (all_alerts[i]['attributes']['effect'] == 'DELAY') {
                                     // Search for stationLocations
-                                    var possibleMatches = [];
                                     for (a = 0; a < affectedStations.length; a++) {
                                         for (b = 0; b < affectedStations.length; b++) {
                                             if (affectedStations[a] != affectedStations[b]) {
@@ -526,13 +505,13 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
                 .style("opacity", 0);
 
             var vis = d3.select("#visualisation").append("svg")
-                .attr("width", WIDTH + MARGINS.left + MARGINS.right)
-                .attr("height", HEIGHT + MARGINS.top + MARGINS.bottom)
+                .attr("width" , WIDTH  + MARGINS.left + MARGINS.right)
+                .attr("height", HEIGHT + MARGINS.top  + MARGINS.bottom)
                 .append("g")
                     .attr("transform", "translate(" + MARGINS.left + "," + MARGINS.top + ")");
 
-            var xScale = d3.scale.linear().range([0,1900]).domain([0,1900]);
-            var yScale = d3.scale.linear().range([0,1900]).domain([0,1900]);
+            var xScale = d3.scale.linear().range([0,WIDTH ]).domain([0,WIDTH ]);
+            var yScale = d3.scale.linear().range([0,HEIGHT]).domain([0,HEIGHT]);
 
             var lineFunction = d3.svg.line()
                 .x(function(d) { return d.x; })
@@ -698,7 +677,7 @@ var refreshDiagram = function refreshDiagram (refreshMode) {
             ];
 
             var monthIndex = timeFromAsDate.getMonth();
-            var dayIndex = timeFromAsDate.getDay();
+            var dayIndex   = timeFromAsDate.getDay();
 
             if (refreshMode == 'current_status') {
                 var dateNow = new Date();
