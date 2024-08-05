@@ -629,6 +629,7 @@ html {
   min-height: 100%
 }
 
+/* ARG: body color */
 body {
   margin: 0;
   padding: 0;
@@ -722,12 +723,14 @@ blockquote cite:before {
   padding-right: 5px
 }
 
+/* ARG: body link visited color */
 a:visited {
-  color: #5197ad
+  color: #333333
 }
 
+/* ARG: body link hover color */
 a:hover {
-  color: #266477;
+  color: #333333;
   outline: 0
 }
 
@@ -2475,6 +2478,7 @@ tr,td,th {
   padding-left: 3.25rem
 }
 
+/* ARG: page footer color */
 .page__footer {
   clear: both;
   float: left;
@@ -4640,6 +4644,7 @@ a.reversefootnote:hover {
   white-space: nowrap
 }
 
+/* ARG: sidebar color */
 .author__urls a {
   display: block;
   margin-top: 5px;

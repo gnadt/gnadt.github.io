@@ -42,10 +42,11 @@ html {
     color: #003300;
     text-decoration: underline; }
 
+/* ARG: section footer color */
 .page-foot {
     font-size: 80%;
     font-family: Arial, serif;
-    color: #003300;
+    color: #006600;
     text-align: center;
     margin-top: 6em;
     border-top: 1px solid lightgrey;
@@ -140,11 +141,13 @@ html {
 .franklin-content li p {
         margin: 10px 0; }
 
+/* ARG: Franklin content color */
 .franklin-content a {
-    color: #004de6;
+    color: #333333;
     text-decoration: none; }
 
 .franklin-content a:hover {
+    color: #333333;
     text-decoration: underline; }
 
 /* ==================================================================
@@ -234,11 +237,11 @@ code {
 
 .hljs-meta, .hljs-metas, .hljs-metap { font-weight: bold; }
 
-.hljs-meta { color: rgb(25, 179, 51); }
+.hljs-meta { color: #006600;; }
 
-.hljs-metas { color: red; }
+.hljs-metas { color: #32859e; }
 
-.hljs-metap { color: rgb(51, 131, 231); }
+.hljs-metap { color: #4063D8; }
 
 /* ==================================================================
     BOXES
