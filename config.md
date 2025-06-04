@@ -8,11 +8,11 @@ The website_* must be defined for the RSS to work
 @def website_url   = "https://gnadt.github.io"
 
 @def author = "Albert R. Gnadt"
-@def year   = "2024"
+@def year   = "2025"
 
 @def mintoclevel = 2
 
-@def robots_disallow = ["assets/","files/"]
+@def robots_disallow = ["assets/", "files/"]
 
 <!--
 Add here files or directories that should be ignored by Franklin, otherwise
