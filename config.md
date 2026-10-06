@@ -8,7 +8,7 @@ The website_* must be defined for the RSS to work
 @def website_url   = "https://gnadt.github.io"
 
 @def author = "Albert R. Gnadt"
-@def year   = "2025"
+@def year   = "2026"
 
 @def mintoclevel = 2
 
