@@ -1,3 +1,5 @@
+# Site Configuration
+
 <!--
 Add here global page variables to use throughout your
 website.
@@ -5,7 +7,10 @@ The website_* must be defined for the RSS to work
 -->
 @def website_title = "Albert R. Gnadt"
 @def website_desc  = "Official Website of Albert R. Gnadt"
-@def website_url   = "https://gnadt.github.io"
+
+<!-- markdownlint-disable MD034 -->
+@def website_url = "https://gnadt.github.io"
+<!-- markdownlint-enable MD034 -->
 
 @def author = "Albert R. Gnadt"
 @def year   = "2026"
