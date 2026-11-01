@@ -1,6 +1,7 @@
-__site/
 .DS_Store
+settings.json
 franklin
 franklin.pub
+__site/
+files/dev/
 node_modules/
-files/mm/dev/
