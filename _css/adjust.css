@@ -31,3 +31,8 @@ blockquote {
 .fndef-content {
     line-height: 1.5em;
 }
+
+.franklin-content th {
+    border: 0;
+    border-bottom: 2px solid black;
+}

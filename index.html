@@ -1,13 +1,6 @@
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
-  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
 <html lang="en" class="no-js">
   <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4Z2FGTKBV"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -21,16 +14,20 @@
     <script>
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
     </script>
-    <!-- For all browsers -->
     <link rel="stylesheet" href="/css/minimal-mistakes.css">
-    <!-- start custom head snippets -->
-    <!-- insert favicons. use https://realfavicongenerator.net/ -->
     <link rel="icon" href="/assets/favicon_bert.png">
-    <!-- end custom head snippets -->
+    <style>
+      @media (min-width: 37.5em) {
+        .feature__wrapper--centered .feature__item {
+          float: none;
+          width: 32.2033898305%;
+          margin: 0 auto;
+        }
+      }
+    </style>
   </head>
 
 <body class="layout--splash">
-<!-- {{ insert masthead.html }} -->
 
 <div class="initial-content">
 
@@ -56,10 +53,6 @@
               </div>
               <div class="archive__item-body">
                 <h2 class="archive__item-title">Curriculum Vitae</h2>
-                <!-- <div class="archive__item-excerpt">
-                  <p>Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content.</p>
-                </div> -->
-                <!-- <p><a href="/minimal-mistakes/docs/layouts/" class="btn btn--primary">Learn more</a></p> -->
                 <p><a href="/files/CV.pdf" rel="nofollow noopener noreferrer" class="btn"></a></p>
               </div>
             </div>
@@ -72,10 +65,6 @@
               </div>
               <div class="archive__item-body">
                 <h2 class="archive__item-title">Magnetic Navigation</h2>
-                <!-- <div class="archive__item-excerpt">
-                  <p>Minimal mistakes works with Franklin too!</p>
-                </div> -->
-                <!-- <p><a href=/minimal-mistakes/docs/configuration/" class="btn btn--primary">Learn more</a></p> -->
                 <p><a href="https://www.youtube.com/watch?v=iACdYox8jyY" rel="nofollow noopener noreferrer" class="btn"></a></p>
               </div>
             </div>
@@ -88,10 +77,6 @@
               </div>
               <div class="archive__item-body">
                 <h2 class="archive__item-title">Important Content</h2>
-                <!-- <div class="archive__item-excerpt">
-                  <p>Free to use however you want under the MIT License. Clone it, fork it, customize it… whatever!</p>
-                </div> -->
-                <!-- <p><a href="/minimal-mistakes/docs/license/" class="btn btn--primary">Learn more</a></p> -->
                 <p><a href="/files/meow.mp4" rel="nofollow noopener noreferrer" class="btn"></a></p>
               </div>
             </div>
