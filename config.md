@@ -13,7 +13,7 @@
 
 @def mintoclevel = 2
 
-@def robots_disallow = ["assets/"]
+@def robots_disallow = ["assets/", "secret/", "secret.html"]
 
 <!-- Files or directories to be ignored during Franklin processing. -->
 @def ignore = ["_dev/"]
