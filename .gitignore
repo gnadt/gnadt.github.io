@@ -3,5 +3,4 @@ settings.json
 franklin
 franklin.pub
 __site/
-files/dev/
-node_modules/
+_dev

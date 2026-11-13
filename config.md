@@ -13,10 +13,10 @@
 
 @def mintoclevel = 2
 
-@def robots_disallow = ["assets/", "files/"]
+@def robots_disallow = ["assets/"]
 
 <!-- Files or directories to be ignored during Franklin processing. -->
-@def ignore = ["files/dev/", "node_modules/", "franklin", "franklin.pub"]
+@def ignore = ["_dev/"]
 
 <!-- Global latex commands. They can be math commands, but do not need to be. -->
 \newcommand{\R}{\mathbb R}
