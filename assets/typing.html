@@ -1,12 +1,107 @@
-<meta charset=utf-8 > <header> <title> </title> <style> body { font-family: "Trebuchet MS"; font-weight: light; background: rgb(100,100,100); color:black; } #content { background:rgb(200,200,200); margin: 0 auto; border-radius:4px; border:1px solid black; padding:5px; } #heading { color:black; padding:2px; text-align:center; font-size:16pt; } #utilBar { background: rgb(150,150,150); padding:2px; width:100%; } #feedback { display:inline; color:white; } .buttons { color:white; float:right; } #prompt, textarea { font-family: monospace; font-size: 11pt; line-height: 22pt; } .matchCorrect { background-color: rgba(86, 180, 255, 0.3); } .matchIncorrect { background-color: rgba(213, 94, 0, 0.3); } #prompt { padding-left: 2px; background: rgba(0,0,0,0.1); padding-left: 10px; } textarea { max-width:100%; width:100%; background:rgba(0,0,0,0); padding-left: 10px; } #response { background:white; } .areaLabel { padding-top: 10px; padding-bottom: 10px; font-weight: bold; } </style> </header> <div id=content > <div id=heading > Typing Fundamentals </div> <div id=utilBar > <select onchange="changeEx();" id=exerciseSelector ><option>Choose an exercise!</select> <div id=feedback > </div> <div class=buttons > <button onclick="reset();">Reset</button> <button onclick="doFinished();">Done!</button> </div> </div> <div class=areaLabel >Exercise Text:</div> <div id=prompt > Hello. Please choose an exercise to begin! </div> <div class=areaLabel >Type here:<div class=buttons > <button onclick="reset();">Reset</button> <button onclick="doFinished();">Done!</button> </div></div> <div id=response > <textarea id=response_input  onkeyup="getKeyDown();" spellcheck=false ></textarea>
+<html>
+<meta charset="utf-8"> 
+<header>
+ <title>
+ </title>
+ <style>
+	body {
+		font-family: "Trebuchet MS";
+		font-weight: light;
+		background: rgb(100,100,100);
+		color:black;
+		}
+	#content {
+		background:rgb(200,200,200);
+		margin: 0 auto;
+		border-radius:4px;
+		border:1px solid black;
+		padding:5px;
+		}
+	#heading {
+		color:black;
+		padding:2px;
+		text-align:center;
+		font-size:16pt;
+		}
+	#utilBar {
+		background: rgb(150,150,150);
+		padding:2px;
+		width:100%;
+		}
+	#feedback {
+		display:inline;	
+		color:white;
+		} 
+	.buttons {
+		color:white;
+		float:right;
+		}
+	#prompt, textarea {
+		font-family: monospace;
+		font-size: 11pt;
+		line-height: 22pt;
+		}
+	.matchCorrect {
+		background-color: rgba(86, 180, 255, 0.3);
+		}
+	.matchIncorrect {
+		background-color: rgba(213, 94, 0, 0.3);
+		}
+	#prompt {
+		padding-left: 2px;
+		background: rgba(0,0,0,0.1);
+		padding-left: 10px;
+		}
+	textarea {
+		max-width:100%;
+		width:100%;
+		background:rgba(0,0,0,0);
+		padding-left: 10px;
+		}
+	#response {
+		background:white;
+		}
+	.areaLabel {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-weight: bold;
+		}
+ </style>
+</header>
+<body>
+
+ <div id="content">
+ <div id="heading">
+	Typing Fundamentals
+</div>
+ <div id="utilBar">
+ <select onchange="changeEx();" id="exerciseSelector"><option>Choose an exercise!</select>
+	  <div id="feedback">
+	  </div>
+	  <div class="buttons">
+	  <button onclick="reset();">Reset</button>
+     <button onclick="doFinished();">Done!</button>
+	  </div>
+	</div>
+
+  <div class="areaLabel">Exercise Text:</div>
+<div id="prompt">
+   Hello. Please choose an exercise to begin!
+  </div>
+  <div class="areaLabel">Type here:<div class="buttons">
+	  <button onclick="reset();">Reset</button>
+     <button onclick="doFinished();">Done!</button>
+	  </div></div> 
+  <div id="response">
+   <textarea id="response_input" onkeyup="getKeyDown();" spellcheck="false"></textarea>
 	  
   </div>
 
 
 
  </div>
-
-<script>
+</body>
+<script type="text/javascript">
 
 var exerciseText = {
 	"Evaluation" : "Learning to type accurately and efficiently is an important skill to have in today's world. Once you've got the hang of it, your productivity in completing nearly all tasks on a computer will improve. Learning where your hands should be positioned on the keyboard is the first step in the process. Next, we will learn which fingers are responsible for which letters on the keyboard. Finally, we will work on practicing our typing proficiency (and speed) to create a muscle memory connection between our brain and our hands on the keyboard. We'll practice typing words and sentences as well as mathematical equations such as: 51+93=144. You should go through each practice assignment 2 or 3 times to make sure that you're comfortable with the letters being reviewed. This typing assessment / test measures your current typing proficiency so you can compare your results from before taking the typing course to after taking the typing course. Good luck and have fun!",
@@ -39,7 +134,7 @@ var exerciseText = {
 }
 
 for (var k in exerciseText) {
-		document.getElementById('exerciseSelector').innerHTML += "<option value='"+k+"'>"+k+"";	
+		document.getElementById('exerciseSelector').innerHTML += "<option value='"+k+"'>"+k+"</option>";	
 }
 
 function changeEx() {
@@ -118,3 +213,4 @@ function doFinished(){
 }
 document.getElementById('response_input').disabled = true;
 </script>
+</html>
