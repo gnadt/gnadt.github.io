@@ -2,3 +2,5 @@ Sitemap: https://gnadt.github.io/sitemap.xml
 
 User-agent: *
 Disallow: /assets/
+Disallow: /secret/
+Disallow: /secret.html
